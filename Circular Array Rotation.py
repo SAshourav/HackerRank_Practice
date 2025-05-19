@@ -24,7 +24,7 @@ def circularArrayRotation(a, k, queries):
     if k <= len(a):  # Handle all cases (including k == len(a))
         for i in range(len(a)):
             # Place element at index i to its new position after k rotations
-            new_index = (i + k) % len(a)
+            new_index = (i + k) % len(a) # new array er rotation er pore je index ase sei index e amra original array er value gula serial wise rakhtechi
             output[new_index] = a[i]
     
     # Process queries
